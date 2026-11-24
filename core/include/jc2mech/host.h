@@ -26,6 +26,8 @@ struct InputState {
     bool parachutePressed = false;
     bool jumpPressed = false;
     bool dropPressed = false;  // let go of a wall (Ctrl in JC2)
+    bool skydiveAnimationPressed = false;
+    bool activatePressed = false;
 };
 
 struct CameraState {
