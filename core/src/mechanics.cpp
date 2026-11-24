@@ -508,7 +508,7 @@ void Mechanics::Tick(IHost& host, float dt) {
     auto fall = [&] {
         if (grounded) {
             state_ = MoveState::OnFoot;
-        } else if (!water && CanSkydive(host, pos)) {
+        } else if (t.skydiveEnabled && !water && CanSkydive(host, pos)) {
             EnterSkydive(vel);
             state_ = MoveState::Skydive;
         } else {
