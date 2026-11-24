@@ -121,6 +121,8 @@ struct Tuning {
     // Host options (not JC2): either mechanic can be turned off; the skydive stays.
     bool grappleEnabled = true;
     bool chuteEnabled = true;
+
+    bool skydiveEnabled = true;
 };
 
 struct GrappleState {
